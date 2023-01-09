@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travers-2</title>
+    <style>
+      #Narli {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="D">
+      <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+      <ul id="Narli">
+        <li>Menu-1</li>
+        <li id="P">Menu-2</li>
+        <li>Menu-3</li>
+        <li>Menu-4</li>
+        <li>Menu-5</li>
+      </ul>
+    </div>
+
+    <script>
+      document.getElementById("P").nextElementSibling.innerHTML = "prev";
+      document.getElementById("P").previousElementSibling.innerHTML = "next";
+      document.getElementById("P").parentElement.style.border =
+        "13px dotted purple";
+    </script>
+  </body>
+</html>

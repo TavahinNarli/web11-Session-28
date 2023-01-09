@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trick-1</title>
+  </head>
+  <body>
+    <div
+      id="Gallery"
+      style="border: 2px solid black; display: inline-block"
+    ></div>
+
+    <script>
+      let _figure = document.createElement("figure");
+
+      let _img = document.createElement("img");
+      _img.setAttribute("src", "img/happy-lion-2.jpg");
+
+      let _caption = document.createElement("figcaption");
+      _caption.innerHTML = "<h2>Narli Tavahin</h2>";
+
+      _figure.appendChild(_img);
+      _figure.appendChild(_caption);
+
+      document.getElementById("Gallery").appendChild(_figure);
+
+      document.title = "Narli Tavahin";
+    </script>
+  </body>
+</html>

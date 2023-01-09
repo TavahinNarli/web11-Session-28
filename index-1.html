@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index 1</title>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <h3>Lorem, ipsum dolor.</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <h4>Lorem, ipsum dolor.</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <h6>Lorem, ipsum dolor.</h6>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+
+    <script>
+      let _h3 = document.querySelectorAll("h3");
+      _h3[1].innerHTML = "<em>Bye Bye Query Selector ALL</em>";
+
+      _h3[1].style.color = "blue";
+      _h3[1].style.fontSize = "50px";
+      _h3[0].style.background = "purple";
+      _h3[0].style.fontSize = "44px";
+      _h3[0].style.color = "#2d2d2d";
+    </script>
+  </body>
+</html>

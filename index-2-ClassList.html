@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class List</title>
+    <style>
+      .p {
+        background-color: purple;
+        color: gold;
+        font-size: 77px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="D">Narli</h1>
+    <h3 class="p">Tavahin</h3>
+
+    <script>
+      document.getElementById("D").classList.add("p");
+      document.getElementsByTagName("h3")[0].classList.remove("p");
+    </script>
+  </body>
+</html>

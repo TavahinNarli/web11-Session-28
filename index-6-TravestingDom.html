@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travesting DOM</title>
+  </head>
+  <body>
+    <div id="D">
+      <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+      <ul>
+        <li>Menu-1</li>
+        <li>Menu-2</li>
+        <li>Menu-3</li>
+        <li>Menu-4</li>
+        <li>Menu-5</li>
+      </ul>
+    </div>
+
+    <script>
+      let _child = document.getElementById("D").children;
+      _child[0].style.color = "brown";
+      console.log(_child);
+
+      let _li = _child[1].children;
+      _li[1].style.color = "purple";
+      _li[3].style.color = "green";
+    </script>
+  </body>
+</html>

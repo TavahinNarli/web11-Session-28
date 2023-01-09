@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate Your Age</title>
+  </head>
+  <body>
+    <script>
+      // Input : Birth date
+      // Present year
+      // Calculate age: present year-birth year
+      // Output : Present Age
+
+      let year_born = prompt("Please Enter Your Birth Year Of Birth(YYYY):");
+
+      function getAge(birthYear) {
+        let currentDate = new Date();
+        let currentYear = currentDate.getFullYear();
+        age = currentYear - birthYear;
+        return age;
+      }
+      calculatedAge = getAge(year_born);
+      alert("Hello Dear, " + "You Are " + calculatedAge + " Years Old!!!!");
+    </script>
+  </body>
+</html>
